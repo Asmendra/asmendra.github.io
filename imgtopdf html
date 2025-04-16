@@ -3,40 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meri Pehli Website</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSS file link -->
+    <title>Image to PDF Converter</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mera Website ka Title</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Home Section</h2>
-            <p>Yeh mera pehla website hai!</p>
-        </section>
-        
-        <section id="about">
-            <h2>About Section</h2>
-            <p>Yahan par aap apne baare mein likh sakte hain.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact Section</h2>
-            <p>Aap mujhe yahan contact kar sakte hain.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2023 Mera Website. Sab hak surakshit hain.</p>
-    </footer>
+    <div class="container">
+        <h1>Image to PDF Converter</h1>
+        <input type="file" id="imageInput" accept="image/*" multiple>
+        <button id="convertButton">Convert to PDF</button>
+        <a id="downloadLink" style="display: none;">Download PDF</a>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
